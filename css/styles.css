@@ -5,14 +5,14 @@ body{
 }
 
 .container{
-    margin: 0 auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    max-width: 70%;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    box-shadow: 0 0 5px 10px lightgray;
-    line-height: 1.7rem;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 80%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  box-shadow: 0 0 5px 10px lightgray;
+  line-height: 1.7rem;
 }
 
 
@@ -73,13 +73,12 @@ body{
 
   /* images */
   img {
-    width: 400px;
-    height: 350px; 
+    width: 80%;
+    height: 30%; 
     object-fit: cover; 
     display: block; 
     border-radius: 5px; 
     box-shadow: 10px 10px 5px lightgray;
-
   }
 .background{
     width: 100%;
@@ -171,5 +170,55 @@ h3{
 
 p{
     font-size: 20px;
+}
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  .container{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 80%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-shadow: 0 0 5px 10px lightgray;
+    line-height: 1.7rem;
+}
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  figure{
+    width: 50%;
+    align-items: center;
+  }
+  
+  article{
+    padding: 0rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 800px) {
+  .container{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-width: 80%;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    box-shadow: 0 0 5px 10px lightgray;
+    line-height: 1.7rem;
+}
+  section{
+    display: flex;
+    flex-direction: column;
+  }
+  figure{
+    width: 50%;
+    align-items: center;
+  }
 }
 
