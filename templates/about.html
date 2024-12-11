@@ -17,16 +17,23 @@
         href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Monofett&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Grotesk:wght@300..700&display=swap"
         rel="stylesheet">
     <!-- Icons -->
+
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
     <!-- Animations -->
 
     <!-- Other -->
 </head>
-<body>
+
+<body id="about-body">
     <header>
         <nav class="navbar">
+
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="restuarants.html">Restaurants</a></li>
                 <li> <div class="dropdown">
                     <button class="dropbtn">Recipes
                       <i class="fa fa-caret-down"></i>
@@ -46,44 +53,91 @@
                       <a href="recipes/thit-kho-trung.html">Thịt kho trứng</a>
                     </div>
                 </li>
+            </ul>
+        </nav>
+    </header>
+        
+    <section class="mobile-nav">
+        <nav id="mySidenav" class="sidenav">
+            <ul>
+                <li><a class="closebtn">&times;</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="ingredients.html">Ingredients</a></li>
-                <li><a href="equipment.html">Equipement</a></li>
                 <li><a href="restuarants.html">Restaurants</a></li>
+                <li> <div class="dropdown">
+                    <button class="dropbtn">Recipes
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="recipes/banh-bao.html">Bánh Bao</a>
+                      <a href="recipes/banh-khot.html">Bánh Khot</a>
+                      <a href="recipes/banh-mi.html">Bánh Mi</a>
+                      <a href="recipes/banh-xeo.html">Bánh Xeo</a>
+                      <a href="recipes/bot-chien.html">Bột Chiên</a>
+                      <a href="recipes/che.html">Chè</a>
+                      <a href="recipes/com-tam.html">Cơm Tấm</a>
+                      <a href="recipes/goi-cuon.html">Gỏi cuốn</a>
+                      <a href="recipes/hu-tieu.html">Hủ tiếu</a>
+                      <a href="recipes/mi-xao-gion.html">Mí Xao Gion</a>
+                      <a href="recipes/pho.html">Phở</a>
+                      <a href="recipes/thit-kho-trung.html">Thịt kho trứng</a>
+                    </div>
+                </li>
             </ul>
         </nav>
 
-    </header>
-    <div class="container">
-        <main>
-            <h1>About</h1>
-            <article>
-                <section class="section">
-                    <section class="section-about">
-                        <h2>Who am I?</h2>
+        <div class="openbtn">
+            <span class="material-symbols-outlined menu-button">menu</span>
+            <span class="menu-text">menu</span>
+        </div>
+
+        <div class="all-over-bkg"></div>  
+
+    </section>
+
+        <div class="container">
+            <main id="about">
+                <h1>About</h1>
+                <article class="myself">
+                    <section>
+                            <h2>Who am I?</h2>
+                            <p>
+                                To those who may be reading this site, hi! My name is Ricky Vu and at the current time of making this site, I am junior at Indiana University. I enjoy coding and designing things and this is something that I dedicated a large amount my free time to creating, so hopefully it looks satisfying! I created this site to as a final project and everything done here was designed by me (with the help of learning in lecture and online of course!)
+                            </p>
+                        </section>
+                        <section>
+                            <img src="../images/ricky-vu.jpeg" alt="">
+                        </section>
+                </article>
+                
+                <article class="baseline">
+                    <section>
+                        <h2>Background</h2>
                         <p>
-                            To those who may be reading this site, hi! My name is Ricky Vu and at the current time of making this site, I am junior at Indiana University. I created this site to as a final project and everything done here was designed by me. 
+                            Vietnamese foods comes in all sorts of shapes and sizes and with its rich tapestry of flavors, it finds its origins deeply embedded in the ancient Viet people's connection to the lush landscapes of the Red River Delta. This culinary journey begins with the cultivation of rice, a staple that not only sustained communities but also became a symbol of cultural significance.
+
+
                         </p>
                     </section>
-                   
                     <section>
-                        <img src="../images/ricky-vu.jpeg" alt="Ricky Vu">    
+                        <h2>Why Vietnamese Culture?</h2>
+                        <p>
+                            To those that are curious to why I chose to make a site about Vietnamese food, for one,
+                            I am Vietnamese so I felt like it only made sense to create something that I can deeply
+                            relate to, at least on a cultural and personal level. Alongside the bonus of growing up around Vietnamese culture, I wanted to spread the cuisine to others around that may have never had the chance to try authentic Vietnamese food, or for others who simply would like to learn a dish outside their scope. I believe that spreading culture is one way for people to understand one another and creating this website is my contribution to that.
+                        </p>
                     </section>
-
-                </section>
-                <section class="section-about">
-                    <h2>Why Vietnamese Culture?</h2>
-                    <p>
-                        To those that are curious to why I chose to make a site about Vietnamese food, for one,
-                        I am Vietnamese so I felt like it only made sense to create something that I can deeply
-                        relate to, at least on a cultural and personal level. Alongside the bonus of growing up around Vietnamese culture, I wanted to spread the cuisine to others around that may have never had the chance to try authentic Vietnamese food, or for others who simply would like to learn a dish outside their scope. I believe that spreading culture is one way for people to understand one another and creating this website is my contribution to that.
-                    </p>
                     
-                </section>
-            </article>
-        </main>
+                </article>
+                
+             
+      
+            </main>
+        </div>
+        <footer>
+            
+        </footer>
+        <script src="../js/nav.js"></script>
 
-    </div>
-    
-</body>
+    </body>
 </html>
