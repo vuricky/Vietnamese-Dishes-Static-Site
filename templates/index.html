@@ -26,24 +26,61 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="ingredients.html">Ingredient</a></li>
-                <li><a href="equipment.html">Kitchen Equipement</a></li>
-                <li><a href="restuarants.html">Local Restaurants</a></li>
-            </ul>
-        </nav>
-        <img class="background" src="../images/market.jpeg" alt="">
-    </header>
-    <div class="container">
-        <h1>Top Rated Vietnamese Dishes You Have To Try!</h1>
-        <article>
 
+            <ul class="nav-links">
+                <li class="item"><a href="index.html">Home</a></li>
+                <li> <div class="dropdown">
+                    <button class="dropbtn">Recipes
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="recipes/banh-bao.html">Bánh Bao</a>
+                      <a href="recipes/banh-khot.html">Bánh Khot</a>
+                      <a href="recipes/banh-mi.html">Bánh Mi</a>
+                      <a href="recipes/banh-xeo.html">Bánh Xeo</a>
+                      <a href="recipes/bot-chien.html">Bột Chiên</a>
+                      <a href="recipes/che.html">Chè</a>
+                      <a href="recipes/com-tam.html">Cơm Tấm</a>
+                      <a href="recipes/goi-cuon.html">Gỏi cuốn</a>
+                      <a href="recipes/hu-tieu.html">Hủ tiếu</a>
+                      <a href="recipes/mi-xao-gion.html">Mí Xao Gion</a>
+                      <a href="recipes/pho.html">Phở</a>
+                      <a href="recipes/thit-kho-trung.html">Thịt kho trứng</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+                <li><a href="equipment.html">Equipement</a></li>
+                <li><a href="restuarants.html">Restaurants</a></li>
+            </ul>
+
+            <div class="mobile-dropdown">
+                <button class="dropbtn">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="ingredients.html">Ingredients</a>
+                    <a href="resturants.html">Restaurants</a>
+                </div>
+            
+        </nav>
+
+        <img class="background" src="../images/market.jpeg" alt="">
+    </header>       
+
+    <div class="container">
+
+        <article>
+            <h1>Top Rated Vietnamese Dishes You Have To Try!</h1>
             <section>
+                
                 <figure>
                     <h2>Bánh Bao</h2>
-                    <img src="../images/banh-bao.jpg" alt="Banh Bao">
+                    <a href="recipes/banh-bao.html" class="image"> 
+                        <img src="../images/banh-bao.jpg" alt="Banh Bao">
+                    </a>
 
                     <figcaption>
                         <p> Bánh Bao ball-shaped bun containing pork or chicken meat, onions, eggs, mushrooms and
@@ -55,7 +92,9 @@
 
                 <figure>
                     <h2>Bánh Khot</h2>
-                    <img src="../images/banh-khot.jpg" alt="Banh Khot">
+                    <a href="recipes/banh-khot.html" class="image"> 
+                        <img class="image" src="../images/banh-khot.jpg" alt="Banh Khot">
+                    </a>
                     <figcaption>
                         <p>
                             Bánh Khot, or Vietnamese savory mini pancakes, is made from a batter of rice flour, corn starch, turmeric powder, water and coconut milk. They are usually topped with shrimp, brushed with scallion oil, fried on a cast iron Banh Khot or Aebleskiver pan to crispy perfection on the outside yet fluffy on the inside.
@@ -65,7 +104,9 @@
 
                 <figure>
                     <h2>Bánh Mí</h2>
-                    <img src="../images/banh-mi.jpg" alt="Banh Mi">
+                    <a href="recipes/banh-mi.html" class="image"> 
+                        <img src="../images/banh-mi.jpg" alt="Banh Mi">
+                    </a>
                     <figcaption>
                         <p>
                             Bánh Mí is a Vietnamese staple and short baguette with its thin, crisp crust and a soft, airy texture. It is often split lengthwise and filled with meat and savory ingredients like a submarine sandwich and served as a meal, called bánh mì thịt. Plain bánh mì is also eaten as a staple food. 
@@ -77,7 +118,10 @@
             <section>
                 <figure>
                     <h2>Bánh Xéo</h2>
-                    <img src="../images/banh-xeo.jpg" alt="Banh Xeo">
+                    <a href="recipes/banh-xeo.html" class="image">
+                        <img src="../images/banh-xeo.jpg" alt="Banh Xeo">
+                    </a>
+                    
                     <figcaption>
                         <p>
                             Bánh Xéo is a cripsy, stuffed rice pancake popular in Vietnam.
@@ -91,7 +135,10 @@
 
                 <figure>
                     <h2>Bột Chiên</h2>
-                    <img src="../images/bot-chien.jpg" alt="Bot Chien">
+                    <a href="recipes/bot-chien.html" class="image">
+                       <img src="../images/bot-chien.jpg" alt="Bot Chien"> 
+                    </a>
+                    
                     <figcaption>
                         <p>
                             This dish consists of fried thin flour cakes. Although this dish 
@@ -101,11 +148,15 @@
                             (either duck or chicken), and some vegetables. This is a popular after-school snack for young students in southern regions of Vietnam. 
                         </p>
                     </figcaption>
+                </a>
+
                 </figure>
 
                 <figure>
                     <h2>Chè</h2>
-                    <img src="../images/che.jpg" alt="Che">
+                    <a href="recipes/che.html" class="image">
+                        <img src="../images/che.jpg" alt="Che">
+                    </a>
                     <figcaption>
                         <p>
                             Another favorite is Chè or Chè Thai. This dish is more unique as it
@@ -121,7 +172,9 @@
             <section>
                 <figure>
                     <h2>Cơm Tấm </h2>
-                    <img src="../images/com-tam.jpg" alt="Com Tam">
+                    <a href="recipes/com-tam.html" class="image">
+                        <img src="../images/com-tam.jpg" alt="Com Tam">
+                    </a>
                     <figcaption>
                         <p>
                             This dish is one of my personal favorites as it incorporates many different
@@ -133,7 +186,9 @@
                 </figure>
                 <figure>
                     <h2>Gỏi cuốn</h2>
-                    <img src="../images/goi-cuon.jpg" alt="Goi Cuon">
+                    <a href="recipes/goi-cuon.html" class="image">
+                        <img src="../images/goi-cuon.jpg" alt="Goi Cuon">
+                    </a>
                     <figcaption>
                         <p>
                             Gỏi cuốn is a small platter of spring rolls that have a base of rice paper rolls 
@@ -145,7 +200,9 @@
 
                 <figure>
                     <h2>Hủ tiếu</h2>
-                    <img src="../images/hu-tieu-nam-vang.jpg" alt="Hu Tieu Nam Vang">
+                    <a href="recipes/hu-tieu.html" class="image">
+                        <img src="../images/hu-tieu-nam-vang.jpg" alt="Hu Tieu Nam Vang">
+                    </a>
                     <figcaption>
                         <p>
                             Hủ tiếu is a home style favorite for everyone! This dish can be served as a warm
@@ -159,7 +216,9 @@
             <section>
                 <figure>
                     <h2>Mí Xao Gion</h2>
-                    <img src="../images/mi-xao-gion.jpg" alt="Mi Xao Gion">
+                    <a href="recipes/mi-xao-gion.html" class="image">
+                        <img src="../images/mi-xao-gion.jpg" alt="Mi Xao Gion">
+                    </a>
                     <figcaption>
                         <p>
                             This popular dish gets its name from the crispy fried noodles that is served with a bundle
@@ -170,7 +229,9 @@
                 </figure>
                 <figure>
                     <h2>Phở</h2>
-                    <img src="../images/pho.jpg" alt="Pho">
+                    <a href="recipes/pho.html" class="image">
+                        <img src="../images/pho.jpg" alt="Pho">
+                    </a>
                     <figcaption>
                         <p>
                             If anyone has heard of Vietnamese cuisine, they might know Phở! This is the national dish 
@@ -181,9 +242,12 @@
                         </p>
                     </figcaption>
                 </figure>
+
                 <figure>
                     <h2>Thịt kho trứng</h2>
-                    <img src="../images/thit-kho-trung.jpg" alt="Thit Kho Trung">
+                    <a href="recipes/thit-kho-trung.html" class="image"> 
+                        <img src="../images/thit-kho-trung.jpg" alt="Thit Kho Trung">
+                    </a>
                     <figcaption>
                         <p>
                             Also known as braised pork and eggs, this is a very simple dish that requires very little to almost no
