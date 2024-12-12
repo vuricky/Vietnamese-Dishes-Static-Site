@@ -6,11 +6,6 @@ body {
   position: relative;
 }
 
-/* *{
-  outline: 3px solid red;
-} */
-
-
 /* Creating an opaque background image for index page*/
 body::before {
   content: '';
@@ -37,6 +32,10 @@ body::before {
   background-image: url('../images/cutting-board.jpeg');
 }
 
+#rest::before {
+  background-image: url('../images/indianapolis-skyline.jpeg');
+}
+
 
 /* about container */
 #about-body .container{
@@ -51,10 +50,14 @@ body::before {
   max-width: 60%;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,3);
   background-color: white;
+  opacity: .85;
+  border-radius: 40px;
 }
 
 #recipes .container{
-  margin-right: 100px;
+  margin-top: 0;
+  margin-right: 150px;
+  max-width: 50%;
 }
 
 
@@ -64,12 +67,8 @@ body::before {
 
 .navbar {
   display: flex;
-  justify-content: space-around;
-  background-color: #333;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 0;
+  justify-content: space-between;
+
 }
 
 .nav-links {
@@ -86,26 +85,38 @@ body::before {
 .nav-links a {
   text-decoration: none;
   color: white;
-  padding: 1.3rem;
+  padding: 10px;
   display: flex;
   align-items: center;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 8px;
+  transition: background-color 500ms ease, 
+              color 500ms ease, 
+              opacity 500ms ease, 
+              transform 500ms ease, 
+              color 500ms ease;
 }
 
 .nav-links a:hover {
-  background-color: #575757;
-  color: #fff;
+  background-color: lightgray;
+  transform: scale(1.1); 
+  color: black;
+}
+
+.image img:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
 }
 /* -------------------------------------------------------------------- */
 /* ---------------------- drop down button for recipes ---------------- */
 /* -------------------------------------------------------------------- */
 .dropdown  {
-  padding: 1.3rem;
+  padding: 10px;
   background-color: inherit;
   font-family: inherit; 
   cursor: pointer;
   color: white;
   font-size: 16px;
+
 }
 
 .dropbtn{
@@ -119,7 +130,6 @@ body::before {
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   color: black;
- 
 }
 
 .dropdown-content a {
@@ -134,7 +144,9 @@ body::before {
 
 .dropdown:hover .dropdown-content {
   display: block;
-  padding: 0;
+  z-index: 10000; 
+  transform: scale(1); 
+
 }
 /* ---------------------------------------------------------------------- */
 /* ---------------------- Side nav bar for mobile view ------------------ */
@@ -192,14 +204,13 @@ body::before {
   top: 0;
   left: 0;
   overflow-x: hidden; 
-  padding-top: 60px; 
   transition: 0.5s;
   background-color: black;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 1.3rem;
+  padding: 10px;
   text-decoration: none;
   font-size: 16px;
   color: #818181;
@@ -231,19 +242,18 @@ body::before {
   height: 300px;; 
   object-fit: cover; 
   display: block; 
-  border-radius: 5px; 
+  border-radius: 10%; 
   box-shadow: 10px 10px 5px lightgray; 
   align-items: center;
 }
 
 
 .image img {
-  transition: transform 300ms ease, box-shadow 300ms ease, opacity 300ms ease;
+  transition: transform 300ms ease, box-shadow 300ms ease;
 }
 .image img:hover {
   transform: scale(1.1); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow */
-  opacity: .8;
 }
 
 header img{
@@ -259,13 +269,13 @@ header img{
 
 #recipes img{
   width: 100%;
-  height: auto;
-  object-fit: cover; 
-  display: block; 
-  border-radius: 5px; 
-  box-shadow: 10px 10px 5px lightgray; 
-  align-items: center;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7); 
+
 }
+
 
 /* ------------------------------------------------------------- */
 /* ------------------------ structure -------------------------- */
@@ -368,19 +378,25 @@ li {
   font-family: "SE Inter","Space Grotesk",Helvetica,sans-serif;
 }
 
+.title{
+  color: white;
+  padding: 1.3rem;
+  font-weight: 400;
+}
+
 .container h1{ 
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 700;
   text-align: center;
 }
 
 .container h2{
   font-size: 36px;
-  font-weight: 200;
+  font-weight: 600;
 }
 .container h3{
   font-size: 30px;
-  font-weight: 200;
+  font-weight: 500;
 }
 
 p{
@@ -482,15 +498,13 @@ header{
   }
 
   /* recipe pages */
-  #recipes img{
-    width:100%;
-    height: auto;
+ 
+  #recipes .container{
+    margin: 0 auto;
+    margin-bottom: 50px;
   }
 
-  #recipes section{
-    flex-direction: column;
-    gap: 10px;
-  }
+  
 
 
 /* ------------------------------------ */
@@ -519,6 +533,10 @@ header{
     font-size: 12px;
     line-height: 1.2rem;
     text-align: justify;
+  }
+  #recipes img{
+    width: 100%;
+    height: auto;
   }
 
 
@@ -565,10 +583,7 @@ header{
     font-size: 12px;
     line-height: 1rem;
   }
-  #recipes img{
-    width: 300px;
-    height: 300px;
-  }
+  
 
   .container h1{ 
     font-size: 36px;
@@ -632,7 +647,10 @@ header{
     line-height: 1.7rem;
   }
 
-  
+  #recipes img{
+    width: 100%;
+    height: auto;
+  }
  
 }
 /* ---------------------------- */
@@ -679,10 +697,7 @@ header{
     font-size: 16px;
     line-height: 1.7rem;
   }
-  #recipes img{
-    width: 100%;
-    height: 100%;
-  }
+  
 }
 
 

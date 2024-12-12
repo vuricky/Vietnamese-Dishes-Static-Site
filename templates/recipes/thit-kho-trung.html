@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banh Khot Recipe</title>
+    <title>Thịt kho trứng Recipe</title>
     <!-- Style sheets -->
     <link rel="stylesheet" href="../../css/styles.css">
     <link rel="stylesheet" href="../../css/normalize.css">
@@ -22,22 +22,23 @@
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://kit.fontawesome.com/bf37eaf948.js" crossorigin="anonymous"></script>
     <!-- Animations -->
-
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Other -->
 </head>
-
 <body id="recipes">
     <header>
         <nav class="navbar">
+            <h1 class="title">Recipes</h1>
             <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../restuarants.html">Restaurants</a></li>
                 <li> <div class="dropdown">
-                    <button class="dropbtn">Recipes
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+                    Recipes <i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
                       <a href="banh-bao.html">Bánh Bao</a>
                       <a href="banh-khot.html">Bánh Khot</a>
                       <a href="banh-mi.html">Bánh Mi</a>
@@ -56,7 +57,7 @@
             </ul>
         </nav>
     </header>
-    <section class="mobile-nav">
+    <div class="mobile-nav">
         <nav id="mySidenav" class="sidenav">
             <ul>
                 <li><a class="closebtn">&times;</a></li>
@@ -64,10 +65,8 @@
                 <li><a href="../about.html">About</a></li>
                 <li><a href="../restuarants.html">Restaurants</a></li>
                 <li> <div class="dropdown">
-                    <button class="dropbtn">Recipes
-                      <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
+                    Recipes <i class="fa fa-caret-down"></i>
+                  <div class="dropdown-content">
                       <a href="banh-bao.html">Bánh Bao</a>
                       <a href="banh-khot.html">Bánh Khot</a>
                       <a href="banh-mi.html">Bánh Mi</a>
@@ -92,9 +91,91 @@
 
         <div class="all-over-bkg"></div>  
 
-    </section>
+    </div>
+    <div class="animate__animated animate__fadeInUp">
+
     <div class="container">
-        
+        <article>
+            <h1>Thịt kho trứng Recipe</h1>
+                <section>
+                    <div>
+                        <img src="../../images/thit-kho-trung.jpg" alt="Thịt kho trứng">
+                    
+                        <h3>Main Ingredients</h3>
+                        <ul>
+                            <li>
+                                1.5 lbs (700g) pork belly or pork shoulder, cut into bite-sized pieces
+                            </li>
+                            <li>
+                                6 hard-boiled eggs, peeled
+                            </li>
+                            <li>
+                                3 tbsp fish sauce
+                            </li>
+                            <li>
+                                2 tbsp sugar (or caramel sauce if available)
+                            </li>
+                            <li>
+                                1/2 tsp salt and 1 tsp ground black pepper
+                            </li>
+                            <li>
+                                2 cloves of garlic
+                            </li>
+                            <li>
+                                2 shallots, minced
+                            </li>
+                            <li>
+                                1 tbsp vegetable oil
+                            </li>
+                            <li>
+                                Fresh cilantro and sliced chili (optional for extra spice and taste)
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3>Directions</h3>
+                        <ol>
+                            <li>
+                                Prepare the pork:
+                                Blanch the pork pieces in boiling water for 2-3 minutes to remove impurities. Rinse under cold water and set aside.
+                            </li>
+
+                            <li>
+                                Make the caramel base:
+                                Heat the oil in a pot over medium heat. Add the sugar and stir constantly until it melts and turns golden brown. Be careful not to burn it.
+                                Quickly add the minced garlic and shallots, stirring until fragrant.
+                            </li>
+                            <li>
+                                Braise the pork:
+                                Add the blanched pork pieces to the caramel and stir to coat evenly.
+                                Add fish sauce, salt, and pepper, and continue stirring for 1-2 minutes.
+                            </li>
+                            <li>
+                                Add liquid:
+                                Pour in the coconut water, ensuring the pork is submerged. If needed, add additional water to cover.
+                                Bring to a boil, then reduce to a simmer. Cover and cook for 30-40 minutes, stirring occasionally.
+                            <li>
+                            <li>
+                                Add the eggs
+                                Add the boiled eggs to the pot and gently stir to coat them with the sauce. Continue to simmer for another 15-20 minutes until the pork is tender and the sauce has thickened slightly.
+                            </li>
+                            <li>
+                                Assemble the bowls:
+                                Divide the cooked noodles among serving bowls. Add slices of brisket and raw sirloin on top.
+                                Ladle the hot broth over the noodles and beef, cooking the raw sirloin in the heat of the broth.
+                            </li>
+                            <li>
+                                Serve:
+                                Serve hot with steamed jasmine rice. Garnish with cilantro and sliced chili, if desired.
+
+                            </li>
+                        </ol> 
+                    </div>
+                    
+                </section>
+                
+        </article>
 
     </div>   
     <footer>
@@ -103,3 +184,5 @@
     <script src="../../js/nav.js"></script>
 </body>
 </html>
+
+
